@@ -19,28 +19,27 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 ## Table of contents
 
 <!-- toc -->
-- [Organization Contents, Structure, and Explanations](#organization-contents-structure-and-explanations)
+- [Organization Contents and Structure](#organization-contents-and-structure)
 - [Pipeline Execution](#pipeline-execution)
-- [Pipeline Documentation](#pipeline-documentation)
 - [About the VIEWS Project](#about-the-views-project)
 
 
 <!-- tocstop -->
 
 
-## Organization Contents, Structure, and Explanations
+## Organization Contents and Structure
 ![VIEWS pipeline diagram](https://raw.githubusercontent.com/views-platform/views-pipeline-core/main/documentation/pipeline_diagram001.png)
 
 ### Organization Contents
 
 The views-platform includes several repositories necessary for the execution of the pipeline:
 
-- **[**views-pipeline-core:]**(https://github.com/views-platform/views-pipeline-core) Contains the main 
-- **[views-models:]**(https://github.com/views-platform/views-models) Contains the 
-- **[views-stepshifter:]**(https://github.com/views-platform/views-stepshifter) Contains the 
-- **[views-hydranet:]**(https://github.com/views-platform/views-hydranet) Contains the 
-- **[views-evaluation:]**(https://github.com/views-platform/views-evaluation) Contains the
-- **[docs:]**(https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
+- [views-pipeline-core:](https://github.com/views-platform/views-pipeline-core) Contains the main 
+- [views-models:](https://github.com/views-platform/views-models) Contains the 
+- [views-stepshifter:](https://github.com/views-platform/views-stepshifter) Contains the 
+- [views-hydranet:](https://github.com/views-platform/views-hydranet) Contains the 
+- [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the
+- [docs:](https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
 
 For more in-depth information about each repository and its contents, please see the detailed repository-specific README files.   
 
