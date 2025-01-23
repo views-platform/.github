@@ -1,4 +1,4 @@
-# VIEWS Platform
+# Welcome to the VIEWS Platform
 
 ![GitHub License](https://img.shields.io/github/license/views-platform/views-pipeline-core)
 ![GitHub branch check runs](https://img.shields.io/github/check-runs/views-platform/views-pipeline-core/main)
@@ -9,7 +9,7 @@
   <img src="https://pbs.twimg.com/profile_banners/1237000633896652800/1717069203/1500x500" alt="VIEWS Twitter Header" style="position: absolute; top: -50px; width: 100%; height: auto;">
 </div>
 
-The [**Violence & Impacts Early Warning System (VIEWS)**](https://viewsforecasting.org/) produces monthly predictions of future violent conflict at both a country and sub-country level of analysis. The views-platform contains several repositories, individual packages and documentation that encapsulates the entire process of developing, experimenting, training, evaluating, and deploying the VIEWS machine learning model pipeline.
+The [**Violence & Impacts Early Warning System (VIEWS)**](https://viewsforecasting.org/) is an award-winning conflict prediction system that generates monthly forecasts for violent conflicts across the world up to three years in advance, at both country and sub-country levels of analysis. The views-platform contains several repositories, individual packages and documentation that encapsulates the entire process of developing, experimenting, training, evaluating, and deploying the VIEWS machine learning model pipeline.
 
 Use our [interactive data dashboard](https://data.viewsforecasting.org/) to explore our latest predictions of future armed conflict.
 
