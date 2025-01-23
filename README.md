@@ -19,16 +19,30 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 ## Table of contents
 
 <!-- toc -->
-- [Organization Contents and Structure](#organization-contents-and-structure)
-- [Pipeline Execution](#pipeline-execution)
+- [Platform Structure and Contents](#platform-structure-and-contents)
+- [Further resources](#further-resources)
 - [About the VIEWS Project](#about-the-views-project)
 
 
 <!-- tocstop -->
 
 
-## Organization Contents and Structure
+## Platform Structure and Contents
+
+### Pipeline Overview
+
+The VIEWS machine learning pipeline involves several key processes:
+
+- **Developing:** Creating and refining machine learning models.
+- **Experimentation:** Testing and validating various model configurations and approaches.
+- **Training:** Training models with relevant data.
+- **Evaluating:** Assessing model performance and accuracy.
+- **Deploying:** Implementing models in a production environment to generate monthly true-future forecasts. 
+
+The overall structure of our pipeline and its individual components are visualized below: 
+
 ![VIEWS pipeline diagram](https://raw.githubusercontent.com/views-platform/views-pipeline-core/main/documentation/pipeline_diagram001.png)
+
 
 ### Organization Contents
 
@@ -43,16 +57,22 @@ The views-platform includes several repositories necessary for the execution of 
 
 For more in-depth information about each repository and its contents, please see the detailed repository-specific README files.   
 
+## Further resources 
 
-### Pipeline Overview
+The operational fatalities model generates forecasts for state-based armed conflict during each month in a rolling 3-year window. 
+The latest iteration, currently in production, is called [Fatalities002](https://viewsforecasting.org/early-warning-system/models/fatalities002/).
 
-The VIEWS machine learning pipeline involves several key processes:
+The following links cover **modelling documentation** for Fatalities002:
+- [Prediction models and input variables in main ensemble](https://viewsforecasting.org/views_documentation_models_fatalities002/)
+- [Levels of analysis and dependent variables](https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf)
+- [Partitioning and time shifting data for training, calibration, testing/forecasting, model weighting, and out-of-sample evaluation](https://viewsforecasting.org/wp-content/uploads/VIEWS_Documentation_Partitioningandtimeshifting_Fatalities002.pdf)
+- [Ensembling and calibration](https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_Ensembling_Fatalities002.pdf)
 
-- **Developing:** Creating and refining machine learning models.
-- **Experimentation:** Testing and validating various model configurations and approaches.
-- **Training:** Training models with relevant data.
-- **Evaluating:** Assessing model performance and accuracy.
-- **Deploying:** Implementing models in a production environment to generate monthly true-future forecasts. 
+For VIEWS-specific **infrastructure documentation**, please refer to following GitHub repositories:
+- [`ingester3`: Loading input data into the views database](https://github.com/UppsalaConflictDataProgram/ingester3)
+- [`viewser`: Accessing input data from views database](https://github.com/prio-data/viewser)
+- [`views_api`: Our API for accessing predictions](https://github.com/prio-data/views_api)
+
 
 
 ## About the VIEWS Project
@@ -67,4 +87,6 @@ The VIEWS project is a collaborative effort supported by leading research instit
 - **Department of Peace and Conflict Research at the University of Uppsala:**
   The [Department of Peace and Conflict Research at Uppsala University](https://www.uu.se/en/department/peace-and-conflict-research) is a leading academic institution in the study of conflict resolution, peacebuilding, and security. The department is renowned for its research and education programs aimed at fostering a deeper understanding of conflict dynamics and peace processes. This department also hosts the [Uppsala Conflict Data Program (UCDP)](https://ucdp.uu.se/), a central data source for the VIEWS project. About half of the VIEWS core team is currently located at Uppsala University .
 
+
+### Our Partners 
 
