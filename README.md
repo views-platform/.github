@@ -20,7 +20,7 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 
 <!-- toc -->
 - [Platform Structure and Contents](#platform-structure-and-contents)
-- [Further resources](#further-resources)
+- [Further Resources and Documentation](#further-resources-and-documentation)
 - [About the VIEWS Project](#about-the-views-project)
 
 
@@ -57,7 +57,9 @@ The views-platform includes several repositories necessary for the execution of 
 
 For more in-depth information about each repository and its contents, please see the detailed repository-specific README files.   
 
-## Further resources 
+## Further Resources and Documentation
+
+**NOTE:** This should be updated once the pipeline is operational!!
 
 The operational fatalities model generates forecasts for state-based armed conflict during each month in a rolling 3-year window. 
 The latest iteration, currently in production, is called [Fatalities002](https://viewsforecasting.org/early-warning-system/models/fatalities002/).
@@ -84,7 +86,7 @@ The VIEWS project is a collaborative effort supported by leading research instit
 - **Peace Research Institute Oslo (PRIO):**
   The [Peace Research Institute Oslo (PRIO)](https://www.prio.org/) conducts research on the conditions for peaceful relations between states, groups, and people. PRIO is dedicated to understanding the processes that lead to violence and those that create sustainable peace. About half of the VIEWS core team is currently located at PRIO.
 
-- **Department of Peace and Conflict Research at the University of Uppsala:**
+- **Department of Peace and Conflict Research at Uppsala University:**
   The [Department of Peace and Conflict Research at Uppsala University](https://www.uu.se/en/department/peace-and-conflict-research) is a leading academic institution in the study of conflict resolution, peacebuilding, and security. The department is renowned for its research and education programs aimed at fostering a deeper understanding of conflict dynamics and peace processes. This department also hosts the [Uppsala Conflict Data Program (UCDP)](https://ucdp.uu.se/), a central data source for the VIEWS project. About half of the VIEWS core team is currently located at Uppsala University .
 
 
