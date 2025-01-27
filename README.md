@@ -23,9 +23,14 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 - [Further Resources and Documentation](#further-resources-and-documentation)
 - [About the VIEWS Project](#about-the-views-project)
 
-
 <!-- tocstop -->
 
+## Rationale: a Robust Machine Learning Pipeline for Early Warning Systems 
+
+Conflict forecasting plays a vital role in early warning systems (EWS), where timely and accurate predictions can inform critical decisions in high-stakes scenarios. However, existing pipelines often fall short in operational reliability, scalability, and transparency, limiting their effectiveness for real-world applications. To address these challenges, a new benchmark in machine learning operations (MLOps) is proposed, focusing on the development of a robust, reliable, and ethical pipeline tailored for EWS.
+This initiative emphasizes combining cutting-edge MLOps practices with conflict forecasting requirements, ensuring the pipeline is not only technically sound but also adaptable to dynamic conditions and aligned with ethical standards. The primary goal is to create a transparent and scalable infrastructure that supports accurate predictions, rapid model updates, and seamless operations, thereby bridging the gap between research prototypes and fully operational systems.
+
+## Key Features 
 
 ## Platform Structure and Contents
 
@@ -48,12 +53,12 @@ The overall structure of our pipeline and its individual components are visualiz
 
 The views-platform includes several repositories necessary for the execution of the pipeline:
 
-- [views-pipeline-core:](https://github.com/views-platform/views-pipeline-core) Contains the main 
-- [views-models:](https://github.com/views-platform/views-models) Contains the 
+- [views-pipeline-core:](https://github.com/views-platform/views-pipeline-core) Contains the main components necesary for the execution of the VIEWS pipeline, handling data ingestion, preprocessing, model and ensemble training, evaluation, and experiment tracking.
+- [views-models:](https://github.com/views-platform/views-models) Contains all of the implemented VIEWS models, at both PRIO-GRID-month and country-month levels of analysis, along with information about prediction targets, input data and model algorithms. 
 - [views-stepshifter:](https://github.com/views-platform/views-stepshifter) Contains the 
 - [views-hydranet:](https://github.com/views-platform/views-hydranet) Contains the 
-- [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the
-- [docs:](https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
+- [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the tools for storing, calculating and managing evaluation metrics for time-series forecasting models.
+- [docs:](https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views-platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
 
 For more in-depth information about each repository and its contents, please see the detailed repository-specific README files.   
 
