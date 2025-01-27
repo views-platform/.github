@@ -1,4 +1,4 @@
-# Welcome to the VIEWS Platform
+# Welcome to the VIEWS Platform!
 
 ![GitHub License](https://img.shields.io/github/license/views-platform/views-pipeline-core)
 ![GitHub branch check runs](https://img.shields.io/github/check-runs/views-platform/views-pipeline-core/main)
@@ -13,13 +13,15 @@ The [**Violence & Impacts Early Warning System (VIEWS)**](https://viewsforecasti
 
 Use our [interactive data dashboard](https://data.viewsforecasting.org/) to explore our latest predictions of future armed conflict.
 
-> [!CAUTION]
-> Please note that this pipeline is **actively under construction**. We're in the **process of development**, meaning it's **not yet ready for operational use**. We're working hard to bring you a robust and fully-functional tool, so stay tuned for updates!
-
 ## Table of contents
 
 <!-- toc -->
-- [Platform Structure and Contents](#platform-structure-and-contents)
+
+- [Rationale](#rationale-a-robust-machine-learning-pipeline-for-early-warning-systems)
+- [Key Processes](#key-processes-of-the-views-pipeline) 
+- [Key Features](#key-features-of-the-views-pipeline)
+- [Pipeline Overview](#pipeline-overview)
+- [Platform Structure and Contents](#views-platform-organization-structure-and-contents)
 - [Further Resources and Documentation](#further-resources-and-documentation)
 - [About the VIEWS Project](#about-the-views-project)
 
@@ -28,15 +30,11 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 ## Rationale: a Robust Machine Learning Pipeline for Early Warning Systems 
 
 Conflict forecasting plays a vital role in early warning systems (EWS), where timely and accurate predictions can inform critical decisions in high-stakes scenarios. However, existing pipelines often fall short in operational reliability, scalability, and transparency, limiting their effectiveness for real-world applications. To address these challenges, a new benchmark in machine learning operations (MLOps) is proposed, focusing on the development of a robust, reliable, and ethical pipeline tailored for EWS.
-This initiative emphasizes combining cutting-edge MLOps practices with conflict forecasting requirements, ensuring the pipeline is not only technically sound but also adaptable to dynamic conditions and aligned with ethical standards. The primary goal is to create a transparent and scalable infrastructure that supports accurate predictions, rapid model updates, and seamless operations, thereby bridging the gap between research prototypes and fully operational systems.
+Our initiative emphasizes combining cutting-edge MLOps practices with conflict forecasting requirements, ensuring the pipeline is not only **technically sound** but also **adaptable** to dynamic conditions and aligned with **ethical standards**. The primary goal is to create a **transparent** and **scalable** infrastructure that supports accurate predictions, rapid model updates, and seamless operations, thereby bridging the gap between research prototypes and fully operational systems. Additionally, we rely on **Open Source** and **FAIR** (Findable, Accessible, Interoperable, and Reusable) principles to guide the design, promoting transparency, accessibility, and collaboration.
 
-## Key Features 
+## Key Processes of the VIEWS Pipeline
 
-## Platform Structure and Contents
-
-### Pipeline Overview
-
-The VIEWS machine learning pipeline involves several key processes:
+Achieving the goals states in our rationale for building a robust ML pipeline involves several core iterative processes: 
 
 - **Developing:** Creating and refining machine learning models.
 - **Experimentation:** Testing and validating various model configurations and approaches.
@@ -44,14 +42,26 @@ The VIEWS machine learning pipeline involves several key processes:
 - **Evaluating:** Assessing model performance and accuracy.
 - **Deploying:** Implementing models in a production environment to generate monthly true-future forecasts. 
 
-The overall structure of our pipeline and its individual components are visualized below: 
+## Key Features of the VIEWS Pipeline
+
+Developing and maintaining the VIEWS relies on multiple key features:
+
+- **Centralized Logging Framework:** At the heart of the pipeline is a comprehensive logging framework designed to enhance visibility, traceability, and system transparency. 
+- **Monitoring and Input Drift Detection:** To maintain the accuracy and reliability of predictions, the pipeline features robust monitoring mechanisms for both model monitoring, as well as monitoring input data in order to ensure timely intervention in cases of deviations.
+- **Branching and Synchronization Strategy:** A branching model separates stable production code from ongoing development, minimizing the risk of disruptions during updates. Synchronization workflows will ensure that updates to tightly coupled ML and non-ML components occur in unison, preventing dependency issues.
+- **Versioning and Artifact Management:** As versioning is crucial for ensuring reproducibility and facilitating troubleshooting, the pipeline includes robust version control for all artifacts, including models, datasets, and configurations.
+- **Modular and Scalable Infrastructure:** The modular design of the pipeline supports scalability and adaptability in dynamic conditions, in turn allowing for simplified maintenance and upgrades.
+
+
+## Pipeline Overview
+
+The overall structure, as well as the core processes in the VIEWS machine learning pipeline are vizualized below:
 
 ![VIEWS pipeline diagram](https://raw.githubusercontent.com/views-platform/views-pipeline-core/main/documentation/pipeline_diagram001.png)
 
+## VIEWS-Platform Organization: Structure and Contents 
 
-### Organization Contents
-
-The views-platform includes several repositories necessary for the execution of the pipeline:
+The views-platform hosts all of the necesary components for producing forecasts utilizing the VIEWS ML pipeline. The modularity of the pipeline allows for components to be maintained in individual repositories. The execution of the pipeline relies on the following repositories: 
 
 - [views-pipeline-core:](https://github.com/views-platform/views-pipeline-core) Contains the main components necesary for the execution of the VIEWS pipeline, handling data ingestion, preprocessing, model and ensemble training, evaluation, and experiment tracking.
 - [views-models:](https://github.com/views-platform/views-models) Contains all of the implemented VIEWS models, at both PRIO-GRID-month and country-month levels of analysis, along with information about prediction targets, input data and model algorithms. 
@@ -60,14 +70,18 @@ The views-platform includes several repositories necessary for the execution of 
 - [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the tools for storing, calculating and managing evaluation metrics for time-series forecasting models.
 - [docs:](https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views-platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
 
-For more in-depth information about each repository and its contents, please see the detailed repository-specific README files.   
+For more in-depth information about each repository and its contents, please see the detailed repository-specific README files:
+- Pipeline execution: [views-pipeline-core](https://github.com/views-platform/views-pipeline-core/blob/main/README.md)
+- About the VIEWS models: [views-models](https://github.com/views-platform/views-models/blob/main/README.md)
+- About VIEWS stepshifter: [views-stephifter](https://github.com/views-platform/views-stepshifter/blob/main/README.md)
+- About VIEWS HydraNet: [views-hydranet](https://github.com/views-platform/views-hydranet/blob/main/README.md)
+- Forecast evaluation: [views-evaluation](https://github.com/views-platform/views-evaluation/blob/main/README.md)
+
+
 
 ## Further Resources and Documentation
 
-**NOTE:** This should be updated once the pipeline is operational!!
-
-The operational fatalities model generates forecasts for state-based armed conflict during each month in a rolling 3-year window. 
-The latest iteration, currently in production, is called [Fatalities002](https://viewsforecasting.org/early-warning-system/models/fatalities002/).
+The previous iteration of the VIEWS model, [Fatalities002](https://viewsforecasting.org/early-warning-system/models/fatalities002/), generated forecasts for state-based armed conflict during each month in a rolling 3-year window. 
 
 The following links cover **modelling documentation** for Fatalities002:
 - [Prediction models and input variables in main ensemble](https://viewsforecasting.org/views_documentation_models_fatalities002/)
@@ -79,7 +93,6 @@ For VIEWS-specific **infrastructure documentation**, please refer to following G
 - [`ingester3`: Loading input data into the views database](https://github.com/UppsalaConflictDataProgram/ingester3)
 - [`viewser`: Accessing input data from views database](https://github.com/prio-data/viewser)
 - [`views_api`: Our API for accessing predictions](https://github.com/prio-data/views_api)
-
 
 
 ## About the VIEWS Project
