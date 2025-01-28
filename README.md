@@ -34,7 +34,7 @@ Our initiative emphasizes combining cutting-edge MLOps practices with conflict f
 
 ## Key Processes of the VIEWS Pipeline
 
-Achieving the goals states in our rationale for building a robust ML pipeline involves several core iterative processes: 
+Achieving the goals stated in our rationale for building a robust ML pipeline involves several core iterative processes: 
 
 - **Developing:** Creating and refining machine learning models.
 - **Experimentation:** Testing and validating various model configurations and approaches.
@@ -65,8 +65,8 @@ The views-platform hosts all of the necesary components for producing forecasts 
 
 - [views-pipeline-core:](https://github.com/views-platform/views-pipeline-core) Contains the main components necesary for the execution of the VIEWS pipeline, handling data ingestion, preprocessing, model and ensemble training, evaluation, and experiment tracking.
 - [views-models:](https://github.com/views-platform/views-models) Contains all of the implemented VIEWS models, at both PRIO-GRID-month and country-month levels of analysis, along with information about prediction targets, input data and model algorithms. 
-- [views-stepshifter:](https://github.com/views-platform/views-stepshifter) Contains the 
-- [views-hydranet:](https://github.com/views-platform/views-hydranet) Contains the 
+- [views-stepshifter:](https://github.com/views-platform/views-stepshifter) Contains the VIEWS Stepshifter model class for time-series forecasts.
+- [views-hydranet:](https://github.com/views-platform/views-hydranet) Contains the VIEWS HydraNet model class for spatiotemporal forecasts.
 - [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the tools for storing, calculating and managing evaluation metrics for time-series forecasting models.
 - [docs:](https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views-platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
 
@@ -109,4 +109,8 @@ The VIEWS project is a collaborative effort supported by leading research instit
 
 
 ### Our Partners 
+
+The research presented on this website is the outcome of projects that has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 694640, ViEWS) and Horizon Europe (Grant agreement No. 101055176, ANTICIPATE; and 101069312, ViEWS (ERC-2022-POC1)), Riksbankens Jubileumsfond (Grant agreement No. M21-0002, Societies at Risk), Uppsala University, Peace Research Institute Oslo, the United Nations Economic and Social Commission for Western Asia (ViEWS-ESCWA), the United Kingdom Foreign, Commonwealth & Development Office (GSRA – Forecasting Fatalities in Armed Conflict), the Swedish Research Council (DEMSCORE), the Swedish Foundation for Strategic Environmental Research (MISTRA Geopolitics), the Norwegian MFA (Conflict Trends QZA-18/0227), the United Nations High Commissioner for Refugees (the Sahel Predictive Analytics project  and Global Mapping of Forecasting Systems), the Norwegian Research Council (U FFAC), and the Complex Risk Analytics Fund (CRAF’d, VIEWS-PIN ).
+
+
 
