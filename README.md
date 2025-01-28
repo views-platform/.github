@@ -12,6 +12,8 @@ The [**Violence & Impacts Early Warning System (VIEWS)**](https://viewsforecasti
 
 Use our [interactive data dashboard](https://data.viewsforecasting.org/) to explore our latest predictions of future armed conflict.
 
+---
+
 ## Table of contents
 
 <!-- toc -->
@@ -26,10 +28,14 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 
 <!-- tocstop -->
 
+---
+
 ## Rationale: a Robust Machine Learning Pipeline for Early Warning Systems 
 
 Conflict forecasting plays a vital role in early warning systems (EWS), where timely and accurate predictions can inform critical decisions in high-stakes scenarios. However, existing pipelines often fall short in operational reliability, scalability, and transparency, limiting their effectiveness for real-world applications. To address these challenges, a new benchmark in machine learning operations (MLOps) is proposed, focusing on the development of a robust, reliable, and ethical pipeline tailored for EWS.
 Our initiative emphasizes combining cutting-edge MLOps practices with conflict forecasting requirements, ensuring the pipeline is not only **technically sound** but also **adaptable** to dynamic conditions and aligned with **ethical standards**. The primary goal is to create a **transparent** and **scalable** infrastructure that supports accurate predictions, rapid model updates, and seamless operations, thereby bridging the gap between research prototypes and fully operational systems. Additionally, we rely on **Open Source** and **FAIR** (Findable, Accessible, Interoperable, and Reusable) principles to guide the design, promoting transparency, accessibility, and collaboration.
+
+---
 
 ## Key Processes of the VIEWS Pipeline
 
@@ -41,6 +47,8 @@ Achieving the goals stated in our rationale for building a robust ML pipeline in
 - **Evaluating:** Assessing model performance and accuracy.
 - **Deploying:** Implementing models in a production environment to generate monthly true-future forecasts. 
 
+---
+
 ## Key Features of the VIEWS Pipeline
 
 Developing and maintaining the VIEWS relies on multiple key features:
@@ -51,12 +59,15 @@ Developing and maintaining the VIEWS relies on multiple key features:
 - **Versioning and Artifact Management:** As versioning is crucial for ensuring reproducibility and facilitating troubleshooting, the pipeline includes robust version control for all artifacts, including models, datasets, and configurations.
 - **Modular and Scalable Infrastructure:** The modular design of the pipeline supports scalability and adaptability in dynamic conditions, in turn allowing for simplified maintenance and upgrades.
 
+---
 
 ## Pipeline Overview
 
 The overall structure, as well as the core processes in the VIEWS machine learning pipeline are vizualized below:
 
 ![VIEWS pipeline diagram](https://raw.githubusercontent.com/views-platform/views-pipeline-core/main/documentation/pipeline_diagram001.png)
+
+---
 
 ## VIEWS-Platform Organization: Structure and Contents 
 
@@ -76,7 +87,7 @@ For more in-depth information about each repository and its contents, please see
 - About VIEWS HydraNet: [views-hydranet](https://github.com/views-platform/views-hydranet/blob/main/README.md)
 - Forecast evaluation: [views-evaluation](https://github.com/views-platform/views-evaluation/blob/main/README.md)
 
-
+---
 
 ## Further Resources and Documentation
 
@@ -93,6 +104,7 @@ For VIEWS-specific **infrastructure documentation**, please refer to following G
 - [`viewser`: Accessing input data from views database](https://github.com/prio-data/viewser)
 - [`views_api`: Our API for accessing predictions](https://github.com/prio-data/views_api)
 
+---
 
 ## About the VIEWS Project
 
