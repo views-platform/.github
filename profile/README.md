@@ -35,7 +35,11 @@ Use our [interactive data dashboard](https://data.viewsforecasting.org/) to expl
 
 
 Conflict forecasting plays a vital role in early warning systems (EWS), where timely and accurate predictions can inform critical decisions in high-stakes scenarios. Artificial Intelligence (AI) is rapidly transforming peace and conflict forecasting, offering new ways to predict escalations, violence trends, and instability. However, without structured operational practices, AI forecasting risks becoming opaque, unreliable, and untrustworthy—making it unsuitable for real-world decision-making. To address these challenges and ensure AI-based forecasting is governable, auditable, and accountable, a new benchmark in machine learning operations (MLOps) is proposed, focusing on the development of a robust, reliable, and ethical pipeline tailored for EWS.
+
+
 Our initiative emphasizes combining cutting-edge MLOps practices with conflict forecasting requirements, ensuring the pipeline is not only **technically sound** but also **adaptable** to dynamic conditions and aligned with **ethical standards**. The primary goal is to create a **transparent** and **scalable** infrastructure that supports accurate predictions, rapid model updates, and seamless operations, thereby bridging the gap between research prototypes and fully operational systems. Additionally, we rely on **Open Source** and **FAIR** (Findable, Accessible, Interoperable, and Reusable) principles to guide the design, promoting transparency, accessibility, and collaboration. As we aim to provide trustworthy and transparent forecasts, our goal is to integrate governance directly into MLOps, enforcing best practices through automation, monitoring, and structured oversight.
+
+
 For more detailed information on our rationale and guiding principles, explore our [Organizational Guides](https://github.com/views-platform/docs/tree/main/Organizational%20Guides).
 
 
