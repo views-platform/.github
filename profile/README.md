@@ -87,7 +87,7 @@ The views-platform hosts all of the necesary components for producing forecasts 
 - [views-stepshifter:](https://github.com/views-platform/views-stepshifter) Contains the VIEWS Stepshifter model class for time-series forecasts.
 - [views-hydranet:](https://github.com/views-platform/views-hydranet) Contains the VIEWS HydraNet model class for spatiotemporal forecasts.
 - [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the tools for storing, calculating and managing evaluation metrics for time-series forecasting models.
-- [docs:](https://github.com/views-platform/views-evaluation) Contains high-level documentation of the views-platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
+- [docs:](https://github.com/views-platform/docs) Contains high-level documentation of the views-platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
 
 For more in-depth information about each repository and its contents, please see the detailed repository-specific README files:
 - Pipeline execution: [views-pipeline-core](https://github.com/views-platform/views-pipeline-core/blob/main/README.md)
