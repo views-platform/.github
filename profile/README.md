@@ -60,11 +60,11 @@ Achieving the goals stated in our rationale for building a robust ML pipeline in
 
 ## Key Features of the VIEWS Pipeline
 
-Developing and maintaining the VIEWS relies on multiple key features:
+Developing and maintaining the VIEWS Pipeline relies on multiple key features:
 
 - **Centralized Logging Framework:** At the heart of the pipeline is a comprehensive logging framework designed to enhance visibility, traceability, and system transparency. 
-- **Monitoring and Input Drift Detection:** To maintain the accuracy and reliability of predictions, the pipeline features robust monitoring mechanisms for both model monitoring, as well as monitoring input data in order to ensure timely intervention in cases of deviations.
-- **Branching and Synchronization Strategy:** A branching model separates stable production code from ongoing development, minimizing the risk of disruptions during updates. Synchronization workflows will ensure that updates to tightly coupled ML and non-ML components occur in unison, preventing dependency issues.
+- **Monitoring and Input Drift Detection:** To maintain the accuracy and reliability of predictions, the pipeline features robust monitoring mechanisms for model monitoring, as well as input data monitoring, to ensure timely intervention in cases of deviations.
+- **Branching and Synchronization Strategy:** A branching strategy separates stable production code from ongoing development, minimizing the risk of disruptions during updates. Synchronization workflows will ensure that updates to tightly coupled ML and non-ML components occur in unison, preventing dependency issues.
 - **Versioning and Artifact Management:** As versioning is crucial for ensuring reproducibility and facilitating troubleshooting, the pipeline includes robust version control for all artifacts, including models, datasets, and configurations.
 - **Modular and Scalable Infrastructure:** The modular design of the pipeline supports scalability and adaptability in dynamic conditions, in turn allowing for simplified maintenance and upgrades.
 
@@ -87,7 +87,7 @@ The views-platform hosts all of the necesary components for producing forecasts 
 - [views-stepshifter:](https://github.com/views-platform/views-stepshifter) Contains the VIEWS Stepshifter model class for time-series forecasts.
 - [views-hydranet:](https://github.com/views-platform/views-hydranet) Contains the VIEWS HydraNet model class for spatiotemporal forecasts.
 - [views-evaluation:](https://github.com/views-platform/views-evaluation) Contains the tools for storing, calculating and managing evaluation metrics for time-series forecasting models.
-- [docs:](https://github.com/views-platform/docs) Contains high-level documentation of the views-platform, the pipeline and its components, along with detailed instructions, guides and information about the project and how to interact with the individual components. 
+- [docs:](https://github.com/views-platform/docs) Contains high-level documentation of the VIEWS platform -- the pipeline and its components -- along with detailed instructions, guides and information about the project and how to interact with the individual components. 
 
 For more in-depth information about each repository and its contents, please see the detailed repository-specific README files:
 - Pipeline execution: [views-pipeline-core](https://github.com/views-platform/views-pipeline-core/blob/main/README.md)
@@ -102,22 +102,22 @@ For more in-depth information about each repository and its contents, please see
 
 The previous iteration of the VIEWS model, [Fatalities002](https://viewsforecasting.org/early-warning-system/models/fatalities002/), generated forecasts for state-based armed conflict during each month in a rolling 3-year window. 
 
-The following links cover **modelling documentation** for Fatalities002:
+The following links cover **model documentation** for Fatalities002:
 - [Prediction models and input variables in main ensemble](https://viewsforecasting.org/views_documentation_models_fatalities002/)
 - [Levels of analysis and dependent variables](https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_LevelsandOutcomes.pdf)
 - [Partitioning and time shifting data for training, calibration, testing/forecasting, model weighting, and out-of-sample evaluation](https://viewsforecasting.org/wp-content/uploads/VIEWS_Documentation_Partitioningandtimeshifting_Fatalities002.pdf)
 - [Ensembling and calibration](https://viewsforecasting.org/wp-content/uploads/VIEWS_documentation_Ensembling_Fatalities002.pdf)
 
 For VIEWS-specific **infrastructure documentation**, please refer to following GitHub repositories:
-- [`ingester3`: Loading input data into the views database](https://github.com/UppsalaConflictDataProgram/ingester3)
-- [`viewser`: Accessing input data from views database](https://github.com/prio-data/viewser)
-- [`views_api`: Our API for accessing predictions](https://github.com/prio-data/views_api)
+- [`ingester3`: Loading input data into the VIEWS database](https://github.com/UppsalaConflictDataProgram/ingester3)
+- [`viewser`: Accessing input data from the VIEWS database](https://github.com/prio-data/viewser)
+- [`views_api`: REST-API for accessing VIEWS predictions](https://github.com/prio-data/views_api)
 
 ---
 
 ## About the VIEWS Project
 
-The VIEWS project is a collaborative effort supported by leading research institutions focused on peace and conflict studies. For more information about the project, visit the [VIEWS Forecasting webpage](https://viewsforecasting.org/).
+The VIEWS project is a collaborative effort supported by leading research institutions focused on peace and conflict studies. For more information about the project, visit the [VIEWS webpage](https://viewsforecasting.org/).
 
 ### Affiliations
 
@@ -125,11 +125,11 @@ The VIEWS project is a collaborative effort supported by leading research instit
   The [Peace Research Institute Oslo (PRIO)](https://www.prio.org/) conducts research on the conditions for peaceful relations between states, groups, and people. PRIO is dedicated to understanding the processes that lead to violence and those that create sustainable peace. About half of the VIEWS core team is currently located at PRIO.
 
 - **Department of Peace and Conflict Research at Uppsala University:**
-  The [Department of Peace and Conflict Research at Uppsala University](https://www.uu.se/en/department/peace-and-conflict-research) is a leading academic institution in the study of conflict resolution, peacebuilding, and security. The department is renowned for its research and education programs aimed at fostering a deeper understanding of conflict dynamics and peace processes. This department also hosts the [Uppsala Conflict Data Program (UCDP)](https://ucdp.uu.se/), a central data source for the VIEWS project. About half of the VIEWS core team is currently located at Uppsala University .
+  The [Department of Peace and Conflict Research at Uppsala University](https://www.uu.se/en/department/peace-and-conflict-research) is a leading academic institution in the study of conflict resolution, peacebuilding, and security. The department is renowned for its research and education programs aimed at fostering a deeper understanding of conflict dynamics and peace processes. This department also hosts the [Uppsala Conflict Data Program (UCDP)](https://ucdp.uu.se/), a central data source for the VIEWS project. About half of the VIEWS core team is currently located at Uppsala University.
 
 
 ### Funding and Partners
 
-The research presented on this website is the outcome of projects that have received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 694640, ViEWS) and Horizon Europe (Grant agreement No. 101055176, ANTICIPATE; and 101069312, ViEWS (ERC-2022-POC1)), Riksbankens Jubileumsfond (Grant agreement No. M21-0002, Societies at Risk), Uppsala University, Peace Research Institute Oslo, the United Nations Economic and Social Commission for Western Asia (ViEWS-ESCWA), the United Kingdom Foreign, Commonwealth & Development Office (GSRA – Forecasting Fatalities in Armed Conflict), the Swedish Research Council (DEMSCORE), the Swedish Foundation for Strategic Environmental Research (MISTRA Geopolitics), the Norwegian MFA (Conflict Trends QZA-18/0227), the United Nations High Commissioner for Refugees (the Sahel Predictive Analytics project  and Global Mapping of Forecasting Systems), the Norwegian Research Council (U FFAC), and the Complex Risk Analytics Fund (CRAF’d, VIEWS-PIN).
+The work presented on this platform is the outcome of projects that have received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme (Grant agreement No. 694640, ViEWS) and Horizon Europe (Grant agreement No. 101055176, ANTICIPATE; and 101069312, ViEWS (ERC-2022-POC1)), Riksbankens Jubileumsfond (Grant agreement No. M21-0002, Societies at Risk), Uppsala University, Peace Research Institute Oslo, the United Nations Economic and Social Commission for Western Asia (ViEWS-ESCWA), the United Kingdom Foreign, Commonwealth & Development Office (GSRA – Forecasting Fatalities in Armed Conflict), the Swedish Research Council (DEMSCORE), the Swedish Foundation for Strategic Environmental Research (MISTRA Geopolitics), the Norwegian MFA (Conflict Trends QZA-18/0227), the United Nations High Commissioner for Refugees (the Sahel Predictive Analytics project  and Global Mapping of Forecasting Systems), the Norwegian Research Council (U FFAC), and the Complex Risk Analytics Fund (CRAF’d, VIEWS-PIN).
 
 ![image](https://github.com/user-attachments/assets/b3e251e0-d4b8-4875-a8dc-2658c1a99162)
